@@ -39,7 +39,7 @@ const Cards = () => {
         return (
           <div
             key={nanoid()}
-            className="flex flex-col lg:flex-row lg:justify-between gap-5 lg:gap-0 bg-white bg-opacity-10 hover:bg-opacity-20 transition-all duration-300 rounded-lg px-4 py-3"
+            className="flex flex-col lg:flex-row lg:justify-between gap-5 lg:gap-0 bg-white bg-opacity-5 hover:bg-opacity-10 transition-all duration-300 rounded-lg px-4 py-3"
           >
             <div className="flex flex-col lg:flex-row items-center gap-5">
               <div className="sm:w-56 lg:w-44 border-2 border-white border-opacity-10 rounded-md overflow-hidden">
