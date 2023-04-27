@@ -1,19 +1,13 @@
 import { useSelector } from 'react-redux'
-import { useParams } from 'react-router-dom'
 import { NavLink } from 'react-router-dom'
 import { BsFillCaretLeftSquareFill } from 'react-icons/bs'
 
 const CardDetails = () => {
-  const shipName = useSelector((store) => store.swapi.shipName)
-  // const shipDetail = useSelector((store) => store.swapi.shipDetail)
-
   let shipDetail
   if (localStorage.getItem('shipDetail')) {
     shipDetail = JSON.parse(localStorage.getItem('shipDetail'))
   }
 
-  // const { cardId } = useParams()
-  // console.log(cardId)
   return (
     <div className=" flex flex-col items-center gap-5 pb-16 md:pb-0">
       <NavLink
@@ -30,7 +24,7 @@ const CardDetails = () => {
         />
       </div>
 
-      <p className="text-yellow-400 text-3xl">{shipDetail?.name}</p>
+      <p className="text-yellow-400 text-3xl mt-6">{shipDetail?.name}</p>
       <hr className="border-1 border-white border-opacity-20 w-1/2 mt-1" />
 
       <div className="w-10/12">

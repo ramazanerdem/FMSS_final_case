@@ -8,11 +8,8 @@ const Header = () => {
   if (localStorage.getItem('shipName')) {
     shipNameLocale = JSON.parse(localStorage.getItem('shipName'))
   }
-
   const shipNameClicked = useSelector((store) => store.swapi.shipName)
-
   const location = useLocation()
-
   // "CardDetails" ve "NotFound" sayfalarında Input component'ını gizle
   const shouldHideInput =
     location.pathname.includes(shipNameLocale || shipNameClicked) ||

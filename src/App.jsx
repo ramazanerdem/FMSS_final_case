@@ -28,8 +28,6 @@ function App() {
       : (shipName = shipNameLocale)
   }
 
-  console.log(shipName)
-
   const router = createBrowserRouter(
     createRoutesFromElements(
       <Route path="/" element={<AppLayout />}>

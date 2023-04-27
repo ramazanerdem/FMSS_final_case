@@ -23,7 +23,7 @@ const Cards = () => {
   if (isLoading) {
     return (
       <div className="flex flex-col items-center gap-10 mt-44">
-        <img className="animate-bounce" src={shipImage} alt="" />
+        <img className="w-24 animate-bounce" src={shipImage} alt="" />
         <p className="text-white text-4xl font-mono animate-pulse">
           Loading...
         </p>

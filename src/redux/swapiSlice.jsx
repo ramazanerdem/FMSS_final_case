@@ -4,15 +4,6 @@ import axios from 'axios'
 export const fetchShips = createAsyncThunk(
   'swapi/fetchShips',
   async (_, thunkAPI) => {
-    // try {
-    //   const res = await axios('https://swapi.dev/api/starships')
-    //   return res.data.results
-    // } catch (error) {
-    //   return thunkAPI.rejectWithValue(
-    //     'API kaynağı yanlış bir adresten alınmış olabilir.'
-    //   )
-    // }
-
     // While döngüsü kullanılarak tüm starship ler çağırılır ve her çağrının ardından, daha önce oluşturduğumuz
     // "allShips" adlı diziye bu çağrıdan gelen sonuçlar "push" methoduyla eklenir.
     // Döngü, "next" özelliği null olana kadar devam eder.
@@ -72,11 +63,9 @@ export const swapiSlice = createSlice({
     builder.addCase(fetchShips.fulfilled, (state, actions) => {
       state.isLoading = false
       state.ships = actions.payload
-      // console.log(state.ships)
     })
     builder.addCase(fetchShips.rejected, (state, action) => {
       state.isLoading = false
-      console.log(action.payload)
     })
   },
 })
