@@ -40,7 +40,7 @@ const CardDetails = () => {
       >
         <BsFillCaretLeftSquareFill />
       </NavLink>
-      <div className="flex justify-center items-center rounded-md overflow-hidden border-2 border-white border-opacity-30 shadow-xl shadow-gray-900 w-80 h-52 lg:w-96 lg:h-64">
+      <div className="flex justify-center items-center rounded-md overflow-hidden border-2 border-white border-opacity-30 shadow-xl shadow-gray-900 w-64 h-44 lg:w-96 lg:h-64">
         <img
           className="w-full h-full object-cover hover:scale-105 transition-all duration-1000"
           src={matchingImage.img}

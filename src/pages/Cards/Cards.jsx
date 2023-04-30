@@ -66,7 +66,7 @@ const Cards = () => {
             className="flex flex-col lg:flex-row lg:justify-between gap-5 lg:gap-0 bg-white bg-opacity-5 hover:bg-opacity-10 transition-all duration-300 rounded-lg px-4 py-3"
           >
             <div className="flex flex-col lg:flex-row items-center gap-5">
-              <div className="flex-none flex justify-center items-center w-72 h-44 sm:w-56 lg:w-44 sm:h-36 lg:h-28 border-2 border-white border-opacity-10 rounded-md overflow-hidden">
+              <div className="flex-none flex justify-center items-center w-60 h-36 sm:w-56 lg:w-44 sm:h-36 lg:h-28 border-2 border-white border-opacity-10 rounded-md overflow-hidden">
                 <img
                   className="w-full h-full object-cover"
                   src={matchingImage.img}
