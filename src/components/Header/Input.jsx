@@ -20,14 +20,14 @@ const Input = () => {
   }
 
   return (
-    <div className="flex gap-3 h-10 sm:h-9">
+    <div className="flex justify-between gap-3 h-9">
       <form
         onSubmit={(e) => handleSubmit(e)}
         className=" flex justify-between items-center bg-white bg-opacity-20 px-3 py-1 rounded-md overflow-hidden"
       >
         <input
           onChange={(e) => setInputValue(e.target.value)}
-          className="outline-none bg-white bg-opacity-0 text-white "
+          className="outline-none bg-white bg-opacity-0 text-white w-36"
           type="text"
           value={inputValue}
         />
