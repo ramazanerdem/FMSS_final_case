@@ -1,10 +1,22 @@
 import { NavLink } from 'react-router-dom'
+// Redux
+import { resetShips, setPageCount } from '../../redux/swapiSlice'
+// Logos
 import swLogo from '../../assets/images/StarwarsLogo.png'
 
 const Logo = () => {
+  // detay sayfasından ana ekrana döndüğümüzde liste sıfırlanır ve birinci sayfadan veriler alınır.
+  const resetShipList = () => {
+    dispatch(setPageCount())
+    dispatch(resetShips())
+  }
   return (
     <div className="flex items-center gap-2 sm:gap-3">
-      <NavLink className="text-3xl text-yellow-400" to="/">
+      <NavLink
+        onClick={() => resetShipList()}
+        className="text-3xl text-yellow-400"
+        to="/"
+      >
         <img className="w-28" src={swLogo} alt="" />
       </NavLink>
 

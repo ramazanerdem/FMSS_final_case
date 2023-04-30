@@ -1,25 +1,49 @@
-import { useSelector } from 'react-redux'
 import { NavLink } from 'react-router-dom'
+// Icons
 import { BsFillCaretLeftSquareFill } from 'react-icons/bs'
+// Redux
+import { useDispatch } from 'react-redux'
+import { resetInput, resetShips, setPageCount } from '../../redux/swapiSlice'
+// Ships Images
+import images from '../../assets/image.json'
 
 const CardDetails = () => {
+  const dispatch = useDispatch()
+
+  // local de, tıklanan gemi bilgileri varsa onu çağırıp değişkene atar
   let shipDetail
-  if (localStorage.getItem('shipDetail')) {
-    shipDetail = JSON.parse(localStorage.getItem('shipDetail'))
+  localStorage.getItem('shipDetail') &&
+    (shipDetail = JSON.parse(localStorage.getItem('shipDetail')))
+
+  // image.json daki name özelliğiyle detay sayfasında listelenen geminin name özelliği aynı ise o array objesi
+  // filtrelenir. Filtrelenen objenin resim url sini bulunduran img özelliği src kısmına atanır.
+  const matchingImage = images.filter((image) => {
+    if (image.name === shipDetail.name) {
+      return image.img
+    }
+  })[0]
+  // console.log(matchingImage.img)
+
+  // detay sayfasından ana ekrana döndüğümüzde liste sıfırlanır ve birinci sayfadan veriler alınır.
+  const resetShipList = () => {
+    dispatch(setPageCount())
+    dispatch(resetShips())
+    dispatch(resetInput())
   }
 
   return (
     <div className=" flex flex-col items-center gap-5 pb-16 md:pb-0">
       <NavLink
+        onClick={() => resetShipList()}
         className="static sm:absolute sm:top-10 sm:left-10 text-3xl text-yellow-400 sm:hover:scale-150 transition-all duration-500"
         to="/"
       >
         <BsFillCaretLeftSquareFill />
       </NavLink>
-      <div className="rounded-md overflow-hidden border-2 border-white border-opacity-30 shadow-xl shadow-gray-900 lg:w-96">
+      <div className="flex justify-center items-center rounded-md overflow-hidden border-2 border-white border-opacity-30 shadow-xl shadow-gray-900 w-80 h-52 lg:w-96 lg:h-64">
         <img
-          className="hover:scale-105 transition-all duration-1000"
-          src="https://www.denofgeek.com/wp-content/uploads/2019/12/x-wing.jpg?w=1024"
+          className="w-full h-full object-cover hover:scale-105 transition-all duration-1000"
+          src={matchingImage.img}
           alt=""
         />
       </div>
