@@ -20,7 +20,7 @@
 
 # Proje Ekran Görüntüsü
 
-![sw-site.png](https://lh3.google.com/u/0/d/1aSy-XKrc9N6whZUMCwhVXPs_xq4kh0EL=w1440-h827-iv1)
+![sw-site.png](https://raw.githubusercontent.com/ramazanerdem/FMSS_final_case/main/project-out/sw-site.JPG?token=GHSAT0AAAAAACAMZ54MWT4PM76KYEX4W4X6ZCOYZSA)
 
 <br>
 
@@ -46,4 +46,4 @@
 <br>
 <br>
 
-![]()
+![](https://github.com/ramazanerdem/FMSS_final_case/blob/main/project-out/starships-site.gif)
