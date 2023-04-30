@@ -20,7 +20,7 @@
 
 # Proje Ekran Görüntüsü
 
-![sw-site.png](https://raw.githubusercontent.com/ramazanerdem/FMSS_final_case/main/project-out/sw-site.JPG?token=GHSAT0AAAAAACAMZ54MWT4PM76KYEX4W4X6ZCOYZSA)
+![sw-site.png](https://raw.githubusercontent.com/ramazanerdem/FMSS_final_case/main/project-out/sw-site.JPG?token=GHSAT0AAAAAACAMZ54NIGPBF7XDSSGQK5H4ZCOY7FA)
 
 <br>
 
@@ -42,8 +42,6 @@
 
 ## Projeyi yerele aldıktan ve terminalde proje klasörüne konumlandıktan sonra `npm run dev` komutunu çalıştırarak projeyi ayağa kaldırabilirsiniz.
 
-<br>
-<br>
 <br>
 
 ![](https://github.com/ramazanerdem/FMSS_final_case/blob/main/project-out/starships-site.gif)
