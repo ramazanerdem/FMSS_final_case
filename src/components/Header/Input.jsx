@@ -8,7 +8,9 @@ import { shipFilter } from '../../redux/swapiSlice'
 const Input = () => {
   const dispatch = useDispatch()
   const [inputValue, setInputValue] = useState('')
-  const { filteredShips, ships } = useSelector((store) => store.swapi)
+  const { filteredShips, ships, isLoading } = useSelector(
+    (store) => store.swapi
+  )
 
   const handleSubmit = (e) => {
     e.preventDefault()

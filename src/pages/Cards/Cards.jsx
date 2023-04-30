@@ -49,7 +49,7 @@ const Cards = () => {
   }
 
   return (
-    <div className="flex flex-col gap-4 pb-10">
+    <div className="flex flex-col gap-4 mt-0 sm:mt-16 lg:mt-0 pb-10">
       {filteredShips.map((ship) => {
         // her yıldız gemisinin route sayfasının url kısmına name verilerinin düzgün karakterler ile geçirilmesi için boşluk kısımları tire (-) ile değiştirilmiştir
         const newName = ship.name.replace(/\s+/g, '-')
@@ -101,6 +101,7 @@ const Cards = () => {
               {/* Detay sayfasına yönlendiren link */}
               <NavLink
                 onClick={() => setShips(ship.name)}
+                disabled={isLoading}
                 to={newName}
                 className="w-full text-center lg:w-auto xl:me-5 bg-yellow-400 bg-opacity-20 hover:bg-opacity-30 transition-all duration-300 rounded-md px-3 py-1 text-white "
               >

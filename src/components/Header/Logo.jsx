@@ -2,7 +2,7 @@ import { NavLink } from 'react-router-dom'
 // Redux
 import { resetShips, setPageCount } from '../../redux/swapiSlice'
 // Logos
-import swLogo from '../../assets/images/StarwarsLogo.png'
+import starwarsLogo from '../../assets/images/StarwarsLogo.png'
 
 const Logo = () => {
   // detay sayfasından ana ekrana döndüğümüzde liste sıfırlanır ve birinci sayfadan veriler alınır.
@@ -17,7 +17,7 @@ const Logo = () => {
         className="text-3xl text-yellow-400"
         to="/"
       >
-        <img className="w-28" src={swLogo} alt="" />
+        <img className="w-28" src={starwarsLogo} alt="StarwarsLogo.png" />
       </NavLink>
 
       <p className="text-white text-opacity-20 text-3xl font-mono font-semibold">

@@ -12,8 +12,9 @@ const CardDetails = () => {
 
   // local de, tıklanan gemi bilgileri varsa onu çağırıp değişkene atar
   let shipDetail
-  localStorage.getItem('shipDetail') &&
-    (shipDetail = JSON.parse(localStorage.getItem('shipDetail')))
+  if (localStorage.getItem('shipDetail')) {
+    shipDetail = JSON.parse(localStorage.getItem('shipDetail'))
+  }
 
   // image.json daki name özelliğiyle detay sayfasında listelenen geminin name özelliği aynı ise o array objesi
   // filtrelenir. Filtrelenen objenin resim url sini bulunduran img özelliği src kısmına atanır.
@@ -32,7 +33,7 @@ const CardDetails = () => {
   }
 
   return (
-    <div className=" flex flex-col items-center gap-5 pb-16 md:pb-0">
+    <div className=" flex flex-col items-center gap-5 -mt-16 sm:-mt-0 pb-16 md:pb-0">
       <NavLink
         onClick={() => resetShipList()}
         className="static sm:absolute sm:top-10 sm:left-10 text-3xl text-yellow-400 sm:hover:scale-150 transition-all duration-500"
