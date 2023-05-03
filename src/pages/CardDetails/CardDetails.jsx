@@ -23,7 +23,6 @@ const CardDetails = () => {
       return image.img
     }
   })[0]
-  // console.log(matchingImage.img)
 
   // detay sayfasından ana ekrana döndüğümüzde liste sıfırlanır ve birinci sayfadan veriler alınır.
   const resetShipList = () => {

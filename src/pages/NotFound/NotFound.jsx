@@ -4,7 +4,11 @@ import stormtrooper from '../../assets/images/stormtrooper.svg'
 function NotFound() {
   return (
     <div className="flex flex-col items-center gap-5 text-white text-opacity-30 text-center -mt-2 sm:mt-20 pb-12">
-      <img className="w-36 sm:w-60 animate-bounce" src={stormtrooper} alt="" />
+      <img
+        className="w-36 sm:w-60 animate-bounce"
+        src={stormtrooper}
+        alt="stormtrooper.svg"
+      />
       <h1 className="text-4xl font-mono text-">404</h1>
       <h1 className="text-4xl text-red-600">Not Found</h1>
       <p>

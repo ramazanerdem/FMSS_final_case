@@ -40,7 +40,7 @@
 
 # Projeyi Ayağa kaldırma
 
-## Projeyi yerele aldıktan ve terminalde proje klasörüne konumlandıktan sonra `npm run dev` komutunu çalıştırarak projeyi ayağa kaldırabilirsiniz.
+## Projeyi yerele aldıktan ve terminalde proje klasörüne konumlandıktan sonra, önce `npm install` komutu ile paketleri yükleyip, daha sonra `npm run dev` komutuyla projeyi ayağa kaldırabilirsiniz.
 
 <br>
 
