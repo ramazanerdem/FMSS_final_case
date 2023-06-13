@@ -22,7 +22,7 @@ const Input = () => {
   }
 
   return (
-    <div className="flex justify-between gap-3 h-9">
+    <section className="flex justify-between gap-3 h-9">
       <form
         onSubmit={(e) => handleSubmit(e)}
         className=" flex justify-between items-center bg-white bg-opacity-20 px-3 py-1 rounded-md overflow-hidden"
@@ -44,7 +44,7 @@ const Input = () => {
       >
         Show All
       </button>
-    </div>
+    </section>
   )
 }
 export default Input

@@ -32,7 +32,7 @@ const CardDetails = () => {
   }
 
   return (
-    <div className=" flex flex-col items-center gap-5 -mt-16 sm:-mt-0 pb-16 md:pb-0">
+    <section className=" flex flex-col items-center gap-5 -mt-16 sm:-mt-0 pb-16 md:pb-0">
       <NavLink
         onClick={() => resetShipList()}
         className="static sm:absolute sm:top-10 sm:left-10 text-3xl text-yellow-400 sm:hover:scale-150 transition-all duration-500"
@@ -48,7 +48,7 @@ const CardDetails = () => {
         />
       </div>
 
-      <p className="text-yellow-400 text-3xl mt-6">{shipDetail?.name}</p>
+      <h2 className="text-yellow-400 text-3xl mt-6">{shipDetail?.name}</h2>
       <hr className="border-1 border-white border-opacity-20 w-1/2 mt-1" />
 
       <div className="w-10/12">
@@ -125,7 +125,7 @@ const CardDetails = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 export default CardDetails

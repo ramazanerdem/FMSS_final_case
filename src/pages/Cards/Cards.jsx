@@ -49,7 +49,7 @@ const Cards = () => {
   }
 
   return (
-    <div className="flex flex-col gap-4 mt-0 sm:mt-16 lg:mt-0 pb-10">
+    <section className="flex flex-col gap-4 mt-0 sm:mt-16 lg:mt-0 pb-10">
       {filteredShips.map((ship) => {
         // her yıldız gemisinin route sayfasının url kısmına name verilerinin düzgün karakterler ile geçirilmesi için boşluk kısımları tire (-) ile değiştirilmiştir
         const newName = ship.name.replace(/\s+/g, '-')
@@ -74,9 +74,9 @@ const Cards = () => {
                 />
               </div>
               <div className="shrink self-start">
-                <p className="text-yellow-400 font-semibold text-lg mb-2">
+                <h2 className="text-yellow-400 font-semibold text-lg mb-2">
                   {ship.name}
-                </p>
+                </h2>
                 <div className="flex flex-col gap-1">
                   <div>
                     <p className="text-xs text-white text-opacity-30">Model</p>
@@ -139,7 +139,7 @@ const Cards = () => {
           </button>
         )
       }
-    </div>
+    </section>
   )
 }
 export default Cards

@@ -11,7 +11,7 @@ const Logo = () => {
     dispatch(resetShips())
   }
   return (
-    <div className="flex items-center gap-2 sm:gap-3">
+    <section className="flex items-center gap-2 sm:gap-3">
       <NavLink
         onClick={() => resetShipList()}
         className="text-3xl text-yellow-400"
@@ -20,10 +20,10 @@ const Logo = () => {
         <img className="w-28" src={starwarsLogo} alt="StarwarsLogo.png" />
       </NavLink>
 
-      <p className="text-white text-opacity-20 text-3xl font-mono font-semibold">
+      <h1 className="text-white text-opacity-20 text-3xl font-mono font-semibold">
         Starships
-      </p>
-    </div>
+      </h1>
+    </section>
   )
 }
 export default Logo

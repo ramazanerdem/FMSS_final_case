@@ -9,8 +9,8 @@ function NotFound() {
         src={stormtrooper}
         alt="stormtrooper.svg"
       />
-      <h1 className="text-4xl font-mono text-">404</h1>
-      <h1 className="text-4xl text-red-600">Not Found</h1>
+      <p className="text-4xl font-mono text-">404</p>
+      <p className="text-4xl text-red-600">Not Found</p>
       <p>
         The page you were looking for could not be found. Please enter a valid
         URL.

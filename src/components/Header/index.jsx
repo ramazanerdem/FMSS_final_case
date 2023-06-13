@@ -20,15 +20,15 @@ const Header = () => {
     location.pathname.includes('/404')
 
   return (
-    <div className="flex justify-center h-10">
-      <div className="fixed w-full md:w-1/2">
+    <header className="flex justify-center h-10">
+      <nav className="fixed w-full md:w-1/2">
         <div className="bg-black flex flex-col xl:flex-row xl:px-14 2xl:px-16 py-4 sm:py-5 gap-4 xl:gap-0 justify-between items-center border-x-0 sm:border-x-2 border-white border-opacity-20">
           <Logo />
           {/* Input component'ını gizlemek için shouldHideInput değişkenini kullan */}
           {!shouldHideInput && <Input />}
         </div>
-      </div>
-    </div>
+      </nav>
+    </header>
   )
 }
 export default Header
